@@ -1,0 +1,16 @@
+{
+  "cities": [
+    {
+      "cityName": "Hargele",
+      "country": "Ethiopia",
+      "date": "2025-04-25T17:12:26.453Z",
+      "emoji": "https://flagcdn.com/24x18/et.png",
+      "notes": "",
+      "position": {
+        "lat": "5.61598581915534",
+        "lng": "42.275390625"
+      },
+      "id": 1
+    }
+  ]
+}
