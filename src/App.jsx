@@ -21,26 +21,29 @@ export default function App() {
   return (
     <AuthProvider>
       <CitiesProver>
-        <BrowserRouter basename="/WorldWise">
+        <BrowserRouter>
           <Suspense fallback={<SpinnerFullPage />}>
             <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="product" element={<Product />} />
-              <Route path="pricing" element={<Pricing />} />
-              <Route path="login" element={<Login />} />
+              <Route path="/WorldWise" element={<Homepage />} />
+              <Route path="/WorldWise/product" element={<Product />} />
+              <Route path="/WorldWise/pricing" element={<Pricing />} />
+              <Route path="/WorldWise/login" element={<Login />} />
               <Route
-                path="app"
+                path="/WorldWise/app"
                 element={
                   <ProtectRoutes>
                     <AppLayout />
                   </ProtectRoutes>
                 }
               >
-                <Route index element={<Navigate replace to="cities" />} />
-                <Route path="cities" element={<CityList />} />
-                <Route path="cities/:id" element={<City />} />
-                <Route path="countries" element={<CountryList />} />
-                <Route path="form" element={<Form />} />
+                <Route
+                  index
+                  element={<Navigate replace to="/WorldWise/cities" />}
+                />
+                <Route path="/WorldWise/cities" element={<CityList />} />
+                <Route path="/WorldWise/cities/:id" element={<City />} />
+                <Route path="/WorldWise/countries" element={<CountryList />} />
+                <Route path="/WorldWise/form" element={<Form />} />
               </Route>
               <Route path="*" element={<PageNotFound />} />
             </Routes>
