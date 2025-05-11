@@ -51,6 +51,10 @@ export default function Login() {
         <div>
           <Button type="primary">Login</Button>
         </div>
+        <h2>
+          I know nobody will put his/her credential into a demo project. so just
+          click login with these pre populated dummy info
+        </h2>
       </form>
     </main>
   );
