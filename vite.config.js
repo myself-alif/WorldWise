@@ -4,9 +4,9 @@ import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/WorldWise/",
   plugins: [
     react(),
-    //  eslint()
+    // , eslint()
   ],
-  base: "/WorldWise/",
 });
