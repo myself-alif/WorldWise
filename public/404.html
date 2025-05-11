@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/WorldWise/" />
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Redirect to original URL path, preserving route
+      const redirectTo = location.pathname + location.search + location.hash;
+      location.replace("/WorldWise" + redirectTo);
+    </script>
   </head>
   <body></body>
 </html>
