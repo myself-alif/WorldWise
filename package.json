@@ -1,6 +1,6 @@
 {
   "name": "worldwise",
-  "homepage": "https://myself-alif.github.io/WorldWise/",
+  "homepage": "https://myself-alif.github.io/WorldWise",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy":" gh-pages -d dist"
+    "deploy": " gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
