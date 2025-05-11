@@ -6,7 +6,7 @@ export default function ProtectRoutes({ children }) {
   const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
   useEffect(() => {
-    if (!isAuthenticated) navigate("/login");
+    if (!isAuthenticated) navigate("/WorldWise/login");
   }, [isAuthenticated, navigate]);
   return isAuthenticated ? children : null;
 }

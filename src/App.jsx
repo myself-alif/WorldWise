@@ -24,12 +24,12 @@ export default function App() {
         <BrowserRouter>
           <Suspense fallback={<SpinnerFullPage />}>
             <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="product" element={<Product />} />
-              <Route path="pricing" element={<Pricing />} />
-              <Route path="login" element={<Login />} />
+              <Route path="/WorldWise" element={<Homepage />} />
+              <Route path="/WorldWise/product" element={<Product />} />
+              <Route path="/WorldWise/pricing" element={<Pricing />} />
+              <Route path="/WorldWise/login" element={<Login />} />
               <Route
-                path="app"
+                path="/WorldWise/app"
                 element={
                   <ProtectRoutes>
                     <AppLayout />

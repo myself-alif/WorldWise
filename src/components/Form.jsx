@@ -68,7 +68,7 @@ function Form() {
       },
     };
     await createCity(newCity);
-    navigate("/app/cities");
+    navigate("/WorldWise/app/cities");
   }
 
   if (isLoadingGeoCoding) return <Spinner />;

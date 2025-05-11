@@ -8,13 +8,13 @@ export default function PageNav() {
       <Logo />
       <ul>
         <li>
-          <NavLink to="/pricing">Pricing</NavLink>
+          <NavLink to="/WorldWise/pricing">Pricing</NavLink>
         </li>
         <li>
-          <NavLink to="/product">Product</NavLink>
+          <NavLink to="/WorldWise/product">Product</NavLink>
         </li>
         <li>
-          <NavLink className={styles.ctaLink} to="/login">
+          <NavLink className={styles.ctaLink} to="/WorldWise/login">
             Login
           </NavLink>
         </li>
