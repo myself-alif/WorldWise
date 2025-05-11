@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
     <script type="text/javascript">
-      // Redirect to original URL path, preserving route
-      const redirectTo = location.pathname + location.search + location.hash;
-      location.replace("/WorldWise" + redirectTo);
+      // Define your base path (repo name)
+      const repoName = "/WorldWise";
+
+      // Prevent duplicate redirecting
+      const currentPath = window.location.pathname;
+      if (!currentPath.startsWith(repoName)) {
+        const newUrl =
+          repoName +
+          currentPath +
+          window.location.search +
+          window.location.hash;
+        window.location.replace(newUrl);
+      }
     </script>
   </head>
   <body></body>
