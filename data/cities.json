@@ -1,3 +1,28 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "cityName": "Merta",
+      "country": "India",
+      "date": "2025-05-11T09:13:43.417Z",
+      "emoji": "https://flagcdn.com/24x18/in.png",
+      "notes": "",
+      "position": {
+        "lat": "26.60817437403311",
+        "lng": "73.93798828125001"
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Sausar",
+      "country": "India",
+      "date": "2025-05-11T09:14:16.792Z",
+      "emoji": "https://flagcdn.com/24x18/in.png",
+      "notes": "",
+      "position": {
+        "lat": "21.651944238210177",
+        "lng": "78.79590216665733"
+      },
+      "id": 2
+    }
+  ]
 }
