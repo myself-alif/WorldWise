@@ -46,7 +46,6 @@ function reducer(state, action) {
         ...state,
         cities: state.cities.filter((city) => city.id !== action.payload),
         isLoading: false,
-        currentCity: {},
       };
     case "rejected":
       return {
